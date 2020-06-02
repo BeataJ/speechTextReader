@@ -50,7 +50,7 @@ select:focus {
   position: absolute;
   top: 30%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -800px);
   background-color: #333;
   color: #fff;
   padding: 20px;
@@ -85,4 +85,16 @@ select:focus {
   float: right;
   text-align: right;
   cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.box img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
 }
