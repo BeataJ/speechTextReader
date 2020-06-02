@@ -31,10 +31,16 @@ h1 {
 }
 
 .btn:active {
-  transform: scale(.98)
+  transform: scale(0.98);
 }
 
 .btn:focus,
 select:focus {
   outline: 0;
+}
+
+.btn-toggle {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
 }
