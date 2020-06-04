@@ -71,6 +71,14 @@ function createBox(item) {
   `;
 
   // @todo - speak event
+  box.addEventListener('click', () => {
+    setTextMessage(text);
+    speakText();
+
+    // Add active effect
+    box.classList.add('active');
+    setTimeout(() => box.classList.remove('active'), 800);
+  });
 
   main.appendChild(box);
 }
