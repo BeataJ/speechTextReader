@@ -112,6 +112,11 @@ function speakText() {
   speechSynthesis.speak(message);
 }
 
+// Set voice
+function setVoice(e) {
+  message.voice = voices.find((voice) => voice.name === e.target.value);
+}
+
 // Voices changed
 speechSynthesis.addEventListener('voiceschanged', getVoices);
 
